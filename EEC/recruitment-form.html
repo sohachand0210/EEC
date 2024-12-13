@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Same styles as before, no changes needed */
+        header {
+            background: #000; /* Black background for the header */
+            height: 50px; /* Set a fixed height for the header */
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center items vertically */
+            padding: 0 20px; /* Horizontal padding */
+            background-attachment: fixed; /* Fixes the background image relative to viewport */
+        }
+        
+        header img {
+            max-height: 50px; /* Match the logo height to the header */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Space between logo and nav */
+            position: fixed;
+            /* background: #000;  */
+        }
+        
+        nav {
+            margin-left: 120px; /* Adjust this to create space for the image */
+        }
+        
+        h3 {
+            margin-top: 40px; /* Adjust this value as needed for spacing */
+        }
+        
+        p {
+            padding-left: 20px; /* Indentation for paragraphs */
+        }
+        
+        .header-background {
+            background-attachment: fixed; /* Fixes the background image relative to viewport */
+        }
+        
+        /* Add some basic styles for the form */
+        form {
+            max-width: 600px; /* Limit the form width */
+            margin: 40px auto; /* Center the form horizontally */
+            padding: 20px; /* Add some padding around the form */
+            border: 1px solid #ccc; /* Add a subtle border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            background: #f9f9f9; /* Change the background color of the form */
+        }
+        
+        label {
+            display: block; /* Make labels block-level elements */
+            margin-bottom: 10px; /* Add some space between labels */
+            font-weight: bold; /* Make labels bold */
+        }
+        
+        input, textarea, select {
+            width: 100%; /* Make input fields full-width */
+            padding: 10px; /* Add some padding to input fields */
+            margin-bottom: 20px; /* Add some space between input fields */
+            border: 1px solid #ccc; /* Add a subtle border */
+            border-radius: 5px; /* Add a subtle rounded corner */
+            background-color: #fff; /* Add a white background to input fields */
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50; /* Add a green background to the submit button */
+            color: #fff; /* Make the text white */
+            padding: 10px 20px; /* Add some padding to the submit button */
+            border: none; /* Remove the border */
+            border-radius: 5px; /* Add a subtle rounded corner */
+            cursor: pointer; /* Change the cursor to a pointer */
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #3e8e41; /* Add a darker green background on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images/logo/EEC1.png" alt="EEC Logo"> <!-- Replace with your image path -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="our-projects.html">Our Projects</a></li>
+                <li><a href="news-updates.html">Updates</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Recruitment Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="position">Position Applying For:</label>
+            <select id="position" name="position" required>
+                <option value="">Select an option</option>
+                <option value="Head">Head</option>
+                <option value="Sub-Head">Sub-Head</option>
+                <option value="Executive">Executive</option>
+            </select><br><br>
+            <label for="department">Department you want to apply for:</label>
+            <select id="department" name="department" required>
+                <option value="">Preference-1:</option>
+                <option value="Technical">Technical</option>
+                <option value="UI/UX">UI/UX</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Public Relations">Public Relations</option>
+                <option value="Logistics">Logistics</option>
+            </select><br><br>
+            <select id="department" name="department" required>
+                <option value="">Preference-2:</option>
+                <option value="Technical">Technical</option>
+                <option value="UI/UX">UI/UX</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Public Relations">Public Relations</option>
+                <option value="Logistics">Logistics</option>
+            </select><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <input type="submit" value="Apply">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Energy Efficiency Committee</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,367 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styles */
+body {
+    background: linear-gradient(to right, #f0f2f5, #e0eafc);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #000; /* Black background for the header */
+    height: 50px; /* Set a fixed height for the header */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 0 20px; /* Horizontal padding */
+    background-attachment: fixed; /* Fixes the background image relative to viewport */
+    position: fixed; /* Fix the header to the top of the viewport */
+    width: 100%; /* Ensure the header takes up the full width of the viewport */
+    z-index: 1000; /* Ensure the header stays above other elements */
+}
+
+.header-background {
+    background-attachment: fixed; /* Fixes the background image relative to viewport */
+}
+
+/* Container for centering content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#home h1 {
+    text-align: center; /* Center align the heading */
+    font-size: 3em; /* Adjust font size as needed */
+    animation: colorChange 3s infinite; /* Apply animation */
+}
+
+@keyframes colorChange {
+    0% { color: #ff0000; } /* Red */
+    25% { color: #00ff00; } /* Green */
+    50% { color: #0000ff; } /* Blue */
+    /* 75% { color: #ffff00; } Yellow */
+    100% { color: #ff0000; } /* Back to Red */
+}
+
+
+
+/* Navigation bar */
+nav {
+    background: #000; /* Black background */
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center-align content */
+    display: flex; /* Use flexbox for navigation items */
+    align-items: center; /* Center nav items vertically */
+    /* height: 100%; Ensure nav takes full height of header */
+    z-index: 1000; /* Ensure it stays above other elements */
+    margin-left: 120px; /* Adjust this to create space for the image */
+    align-items: center; /* Center nav items vertically */
+    justify-content: center; /* Center-align content */
+}
+
+
+
+nav ul {
+    display: flex; /* Horizontal list of nav items */
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between nav items */
+}
+
+nav ul li a:hover {
+    color: #000; /* Change text color on hover */
+    background-color: #e8f5e9; /* Light green background on hover */
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    position: fixed;
+}
+
+nav .logo {
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s, padding 0.3s;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+
+/* Hero section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg');
+    margin-top: 60px; /* Adjust for navbar height */
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Section styles */
+main {
+    flex: 1;
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 20px; /* Curved edges for both top and bottom */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom right, #ffffff, #f1f8e9); /* Gradient effect */
+    min-height: 500px; /* Fixed height for consistency */  /* Ensure all sections are of equal height */
+    margin-top: 60px; /* Space after the NAV */
+    width: 100%; /* Full width of the container */
+    margin-bottom: 80px; /* Space before the Footer */
+}
+
+/* Hover effect for sections */
+section:hover {
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5); /* Blurry border effect on hover */
+}
+
+/* Adjust width for one column layout */
+.container {
+    width: 90%;
+    max-width: 2000px; /* Increased width */
+    margin: 0 auto;
+}
+
+/* Styling for team members */
+#team {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: 20px auto;
+        border-radius: 20px; /* Curved edges for both top and bottom */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(to bottom right, #ffffff, #f1f8e9); /* Gradient effect */
+        min-height: 500px; /* Fixed height for consistency */  /* Ensure all sections are of equal height */
+        margin-top: 60px; /* Space after the NAV */
+        width: 100%; /* Full width of the container */
+        text-align: center;
+}
+
+.chairperson, .vice-chairpersons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.vice-chairpersons {
+    display: flex;
+    gap: 40px; /* Space between Vice Chairpersons */
+}
+
+.member-info {
+    text-align: center;
+}
+
+.member-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures the image covers the container properly */
+    border: 2px solid #333; /* Optional border around the images */
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* Remove margin and padding from the FAQ form if necessary */
+#faq-form {
+    margin-bottom: 0; /* Remove any extra space below the FAQ form */
+    padding-bottom: 0; /* Remove any extra padding at the bottom */
+}
+
+
+#faq-list-section {
+    margin-top:20px; /* Remove extra space between sections */
+}
+
+/* Specific section colors */
+section:nth-of-type(1) {
+    background: linear-gradient(to bottom right, #f9fbe7, #e1f5fe); /* Light yellow to light blue */
+}
+
+section:nth-of-type(2) {
+    background: linear-gradient(to bottom right, #e1f5fe, #f1f8e9); /* Light blue to light green */
+}
+
+section:nth-of-type(3) {
+    background: linear-gradient(to bottom right, #f1f8e9, #fff3e0); /* Light green to light orange */
+}
+
+section:nth-of-type(4) {
+    background: linear-gradient(to bottom right, #fff3e0, #f9fbe7); /* Light orange to light yellow */
+}
+
+/* Card layout */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-bottom: 10px;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.card-content p {
+    color: #666;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQs section */
+#faq-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#faq-form textarea, #faq-form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#faq-form textarea:focus, #faq-form input:focus {
+    border-color: #4caf50;
+}
+
+#faq-form button {
+    margin-top: 10px;
+    padding: 12px 25px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#faq-form button:hover {
+    background-color: #388e3c;
+}
+
+/* Contact Form */
+#contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+    border-color: #4caf50;
+}
+
+#contact-form button {
+    margin-top: 10px;
+    padding: 12px 25px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #388e3c;
+}
+
+/* Footer styles */
+
+footer {
+    background: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    text-align: center;
+    padding: 20px 0;
+    position: fixed; /* Fix the footer to the bottom of the viewport */
+    bottom: 0; /* Ensure the footer stays at the bottom */
+    width: 100%; /* Ensure the footer takes up the full width of the viewport */
+    z-index: 1000; /* Ensure the footer stays above other elements */
+    margin-top: auto;
+}
+
+footer p {
+    color: #fff; /* White text for contrast */
+    font-size: 16px;
+}

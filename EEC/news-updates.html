@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News and Updates</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+      background: #000; /* Black background for the header */
+      height: 50px; /* Set a fixed height for the header */
+      display: flex; /* Use flexbox for layout */
+      align-items: center; /* Center items vertically */
+      padding: 0 20px; /* Horizontal padding */
+      background-attachment: fixed; /* Fixes the background image relative to viewport */
+  }
+  
+  header img {
+      max-height: 50px; /* Match the logo height to the header */
+      height: auto; /* Maintain aspect ratio */
+      margin-right: 20px; /* Space between logo and nav */
+      position: fixed;
+      /* background: #000;  */
+  }
+          nav {
+              margin-left: 120px; /* Adjust this to create space for the image */
+          }
+          h3 {
+              margin-top: 40px; /* Adjust this value as needed for spacing */
+          }
+          p {
+              padding-left: 20px; /* Indentation for paragraphs */
+          }
+  
+          .header-background {
+      background-attachment: fixed; /* Fixes the background image relative to viewport */
+  }
+  
+  /* Add a unique style for the "Apply" link */
+  .apply-link {
+      background-color: #4CAF50; /* Green background */
+      color: #000; /* Black text */
+      padding: 2px 5px; /* Reduce padding to fit the text */
+      border: none; /* Remove the border */
+      border-radius: 5px; /* Add a subtle rounded corner */
+      cursor: pointer; /* Change the cursor to a pointer */
+      text-decoration: none; /* Remove the underline */
+      display: inline-block; /* Make the link an inline-block element */
+      margin: 10px auto; /* Center align the button */
+      text-align: center; /* Center align the text */
+      font-size: 16px; /* Set font size to match the text */
+      width: fit-content; /* Adjust the width to fit the content */
+      color: aliceblue;
+  }
+  
+  .apply-link:hover {
+      background-color: #3e8e41; /* Darker green background on hover */
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/images/logo/EEC1.png" alt="EEC Logo"> <!-- Replace with your image path -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="our-projects.html">Our Projects</a></li>
+                <li><a href="news-updates.html">Updates</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <section id="news">
+        <h2>News and Updates</h2>
+        <div class="updates">
+            <h3>Updates</h3>
+            <p>Recruitment forms for various positions are now open. <a href="recruitment-form.html">Apply here</a>.</p>
+        </div>
+        <div class="news">
+            <h3>News</h3>
+            <p>Stay tuned for the latest news on our committee's progress!</p>
+        </div>
+    </section> -->
+
+    <section>
+        <h2>Updates</h2>
+        <div class="updates">
+            <p>Recruitment forms for various positions are now open.</p>
+            <p>So, hurry Up!!!!</p>
+            <center><a href="recruitment-form.html" class="apply-link">Apply here</a></center>
+        </div>
+        <!-- <div class="news">
+            <h3>News</h3>
+            <p>Stay tuned for the latest news on our committee's progress!</p>
+        </div> -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Energy Efficiency Committee</p>
+    </footer>
+</body>
+</html>

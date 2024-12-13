@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="/images/logo/EEC1.png">
+    <style>
+header img {
+    max-height: 50px; /* Match the logo height to the header */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and nav */
+    position: fixed;
+    /* background: #000;  */
+}
+        nav {
+            margin-left: 120px; /* Adjust this to create space for the image */
+        }
+        h3 {
+            margin-top: 40px; /* Adjust this value as needed for spacing */
+        }
+        p {
+            padding-left: 20px; /* Indentation for paragraphs */
+        }
+
+        .header-background {
+    background-attachment: fixed; /* Fixes the background image relative to viewport */
+}
+
+.member-info img {
+        max-height: 150px; /* Increase the max height to make the circle bigger */
+        height: auto; /* Maintain aspect ratio */
+        width: 120px; /* Make the image fit the container */
+        height: 120px; /* Make the image fit the container */
+        object-fit: cover; /* Ensure the image is scaled to fit the container */
+        border-radius: 50%; /* Create a circular container */
+        background-image: url('/images/logo/EEC1.png'); /* Set the background image */
+        background-size: cover; /* Ensure the background image fits the container */
+        background-position: center center; /* Center the background image both horizontally and vertically */
+        margin-right: 20px; /* Space between logo and nav */
+        border-radius: 50%; /* Create a circular container */
+        /* margin-bottom: 10px; Add some space between the image and the text */
+
+    }
+
+    .team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chairpersons, .vice-chairpersons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.member-info h3, .member-info p {
+    text-align: center; /* Center the text horizontally */
+    margin: 0; /* Remove default margins */
+      </style>
+</head>
+<body>
+    <header>
+        <img src="/images/logo/EEC1.png" alt="EEC Logo"> <!-- Replace with your image path -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-team.html">Our Team</a></li>
+                <li><a href="our-projects.html">Our Projects</a></li>
+                <li><a href="news-updates.html">Updates</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <section id="team">
+        <h2>Our Team</h2>
+        <div class="team-member">
+            <img src="hemil.jpg" alt="Hemil Shah">
+            <h3>Hemil Shah</h3>
+            <p>Chairperson</p>
+        </div>
+        <div class="team-member">
+            <img src="soha.jpg" alt="Soha Chand">
+            <h3>Soha Chand</h3>
+            <p>Vice Chairperson</p>
+        </div>
+        <div class="team-member">
+            <img src="ninaad.jpg" alt="Ninaad">
+            <h3>Ninaad</h3>
+            <p>Vice Chairperson</p>
+        </div>
+        <h4>Recruitments for Heads, Sub-Heads, and Executives are open!</h4>
+    </section> -->
+
+    <section id="team">
+        <h2>Our Team</h2>
+    
+        <div class="team-container">
+            <div class="chairpersons">
+                <div class="member-info">
+                <center><img src="images/our team/hemil.png" alt="Hemil Shah"></center>
+                <h3>Hemil Shah</h3>
+                <p>Chairperson</p>
+                </div>
+                <div class="member-info">
+                <center><img src="images/our team/soha.png" alt="Soha Chand"></center>
+                <h3>Soha Chand</h3>
+                    <p>Chairperson</p>
+                </div>
+            </div>
+    
+            <div class="vice-chairpersons">
+                <div class="member-info">
+                    <center><img src="images/our team/ninaad.png" alt="Ninaad Wagle"></center>
+                    <h3>Ninaad Wagle</h3>
+                    <p>Vice Chairperson</p>
+                </div>
+                <div class="member-info">
+                    <center><img src="images/our team/riya.png" alt="Riya Dhakaan"></center>
+                    <h3>Riya Dhakaan</h3>
+                    <p>Vice Chairperson</p>
+                </div>
+            </div>
+        </div>
+    
+        <h4>Recruitments for Heads, Sub-Heads, and Executives are open!</h4>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Energy Efficiency Committee</p>
+    </footer>
+</body>
+</html>
